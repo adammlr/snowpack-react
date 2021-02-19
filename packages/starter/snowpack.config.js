@@ -6,17 +6,12 @@ module.exports = {
     '../ui': { url: '/dist/ui' }
   },
   plugins: ['@snowpack/plugin-react-refresh', '@snowpack/plugin-typescript'],
-  install: [
-    /* ... */
-  ],
-  installOptions: {
-    sourceMap: true
-  },
-  devOptions: {
-    /* ... */
+
+  packageOptions: {
+    sourcemap: true
   },
   buildOptions: {
-    sourceMaps: true
+    sourcemap: true
   },
   alias: {
     '@invision/ui': '../ui'
